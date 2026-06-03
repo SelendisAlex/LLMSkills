@@ -1,3 +1,9 @@
+---
+name: CheckpointSave
+description: Save a concise work checkpoint at the end of a task, including reasoning, workflow, and key notes, under ./workCheckpoint/.
+license: MIT
+---
+
 # CheckpointSave
 
 ## 1. 在工作结束后，将自己的思维过程，操作流程与重点事项，简略、压缩地记录到文本文档内
