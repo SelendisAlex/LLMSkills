@@ -1,5 +1,5 @@
 ---
-name: CheckpointSave
+name: checkpointsave
 description: Save a concise work checkpoint at the end of a task, including reasoning, workflow, and key notes, under ./workCheckpoint/.
 license: MIT
 ---
