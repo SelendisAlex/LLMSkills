@@ -6,10 +6,10 @@ license: MIT
 
 # FirstInit
 
-## 1. 使用者是中文用户
+## 1. The User Is a Chinese-Language User
 
-- 使用者是中文用户，除非特殊情况，否则用中文回答问题。
+- The user is a Chinese-language user. Unless special circumstances apply, answer questions in Chinese.
 
-## 2. 当使用者对话时说出带有项目信息，并明确提到"整理工作架构"时
+## 2. When the User Provides Project Information and Explicitly Mentions "Organize the Work Architecture"
 
-- 你需要阅读这个项目的文档，了解这个项目的框架，总之是要全方位的获取关于此项目的信息。然后再查看、整理本机目录下，该站点的结构等信息。在这之后，整理一份便于开发该站点项目的、该站点和开源项目的所有重要信息的开发技术文档，保存在当前工作目录下独立的文件夹中。
+- Read the project's documentation and understand the project's framework. In short, comprehensively gather information about the project. Then inspect and organize information such as the site's structure under the local directory. After that, compile a development technical document that makes it easier to develop this site project and includes all important information about the site and the open-source project. Save it in a separate folder under the current working directory.

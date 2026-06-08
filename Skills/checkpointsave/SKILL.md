@@ -6,39 +6,39 @@ license: MIT
 
 # CheckpointSave
 
-## 1. 记录工作
+## 1. Record Work
 
-- 规则的保存：在每次用户提出重要地对本项目的意见时，例如编码规范、项目架构、文件架构、文件/文件夹命名规范、变量命名规范、工作流程等会对项目造成长期影响的规则，则将其简略但不失其核心含义的记录到下文提到的目录中。
-- 工作记录的保存：在每次重要地、长期地或特殊地改动、更新工作结束后，将操作流程与重点事项，简略、压缩地记录到文本文档内，就像检查点一样，并且在回答中汇报：“已记录检查点”。
+- Saving rules: Whenever the user gives important input about this project, such as coding standards, project architecture, file architecture, file or folder naming conventions, variable naming conventions, workflows, or other rules that will have a long-term impact on the project, record them in the directory specified below. Keep the record brief while preserving its core meaning.
+- Saving work records: After each important, long-term, or special change or update is completed, record the operation process and key points in a text document in a brief and compressed form, like a checkpoint. Also report in the response: "Checkpoint recorded."
 
-文件保存规范：
+File saving rules:
 
-- 文档的格式为.md。
-- 允许使用markdown转义符。
-- 文件名称为"当前日期（精确到分钟）+操作重点"。
+- The document format is `.md`.
+- Markdown escape characters are allowed.
+- The file name must be "current date (accurate to the minute) + operation focus".
 
-- 规则的保存：文档保存在当前工作目录的 ./workCheckpoint/Rules/ 路径内，若没有该文件夹可创建，若根目录有以前创建的记录则移至该文件夹。
-- 工作记录的保存：文档保存在当前工作目录的 ./workCheckpoint/Works/ 路径内，若没有该文件夹可创建，若根目录有以前创建的记录则移至该文件夹。
+- Saving rules: Save documents under the `./workCheckpoint/Rules/` path in the current working directory. If this folder does not exist, it may be created. If previously created records exist in the root directory, move them into this folder.
+- Saving work records: Save documents under the `./workCheckpoint/Works/` path in the current working directory. If this folder does not exist, it may be created. If previously created records exist in the root directory, move them into this folder.
 
-## 2. 自动触发
+## 2. Automatic Trigger
 
-当任务结束时，如果满足以下任一条件，应自动使用本技能：
+At the end of a task, automatically use this skill if any of the following conditions are met:
 
-- 创建了新的源码文件或模块。
-- 修改了 3 个或更多项目文件。
-- 新增了功能、子系统、命令、数据库/存储结构，或持久化数据格式。
-- 修改了编译、构建、运行时接入逻辑，例如 include、callback、路由、迁移或配置。
-- 用户明确强调了未来维护、交接、编码、项目规范，或“记录/记住/checkpoint”。
-- 任务中包含不明显的推理过程、发现的重要约束，或需要保留的注意事项。
+- New source code files or modules were created.
+- Three or more project files were modified.
+- A feature, subsystem, command, database or storage structure, or persistent data format was added.
+- Compilation, build, or runtime integration logic was modified, such as includes, callbacks, routes, migrations, or configuration.
+- The user explicitly emphasized future maintenance, handoff, coding, project conventions, or "record/remember/checkpoint".
+- The task included non-obvious reasoning, important constraints that were discovered, or notes that need to be preserved.
 
-以下情况不要自动使用：
+Do not use this skill automatically in the following cases:
 
-- 纯问答，没有文件改动。
-- 很小的单文件修复。
-- 仅格式化改动。
-- 临时实验，且最终已回退。
+- Pure question answering with no file changes.
+- A very small single-file fix.
+- Formatting-only changes.
+- A temporary experiment that was ultimately reverted.
 
-自动触发时，应在最终回复前保存 checkpoint，并在最终回复中简要说明 checkpoint 路径。
+When triggered automatically, save the checkpoint before the final response and briefly state the checkpoint path in the final response.
 
-- 对于代码任务，在最终回复前检查本次修改的文件数量，以及是否新增模块或持久化格式。
-- 如果属于重要改动，应无需询问，直接创建 checkpoint。
+- For coding tasks, before the final response, check how many files were modified in this task and whether any modules or persistent formats were added.
+- If the change is important, create the checkpoint directly without asking.
