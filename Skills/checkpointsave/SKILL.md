@@ -20,7 +20,11 @@ File saving rules:
 - Saving rules: Save documents under the `./workCheckpoint/Rules/` path in the current working directory. If this folder does not exist, it may be created. If previously created records exist in the root directory, move them into this folder.
 - Saving work records: Save documents under the `./workCheckpoint/Works/` path in the current working directory. If this folder does not exist, it may be created. If previously created records exist in the root directory, move them into this folder.
 
-## 2. Automatic Trigger
+## 2. Automatic Trigger at Task Start
+
+If you do not have any memory about work in this workspace, or if this conversation is the first code task, review, or other important task in the session and you have not read the work rules (`workCheckpoint\Rules`) or work records (`workCheckpoint\Works`), read them and remember them. This is important.
+
+## 3. Automatic Trigger at Task End
 
 At the end of a task, automatically use this skill if any of the following conditions are met:
 
