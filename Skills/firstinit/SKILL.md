@@ -1,6 +1,6 @@
 ---
 name: firstinit
-description: Global rules and The initial conversation serves as preparation for future work.
+description: Use at the start of a conversation in any workspace, especially when conversing with the user for the first time in the current workspace or when baseline interaction rules are needed. Apply workspace-level defaults for skill encoding, skill language, Chinese-language responses, and first-time project architecture preparation.
 license: MIT
 ---
 

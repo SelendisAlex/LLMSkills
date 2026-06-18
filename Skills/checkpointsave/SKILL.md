@@ -1,10 +1,20 @@
 ---
 name: checkpointsave
-description: Save a concise work checkpoint at the end of a task, including reasoning, workflow, and key notes, under ./workCheckpoint/.
+description: Use at the start and end of coding, review, refactor, architecture, debugging, project-rule, or other important workspace tasks in any workspace. At task start, read existing ./workCheckpoint/Rules/ and ./workCheckpoint/Works/ records when this is the first important task in the workspace/session or when prior workspace memory is unavailable. At task end, save concise rule or work checkpoints under ./workCheckpoint/ when project rules, long-term constraints, notable reasoning, code changes, architecture changes, or maintenance notes need to be preserved.
 license: MIT
 ---
 
 # CheckpointSave
+
+## Mandatory Startup Check
+
+Before answering or editing for any coding, review, refactor, architecture, debugging, project-rule, or other important workspace task:
+
+1. If this is the first important task in the current workspace/session, or workspace memory is unavailable, read this skill first.
+2. Read all existing Markdown files under `./workCheckpoint/Rules/` if the directory exists.
+3. Read all existing Markdown files under `./workCheckpoint/Works/` if the directory exists.
+4. Treat those records as active workspace context before continuing.
+5. If the directories do not exist, continue without creating them unless a checkpoint must be saved later.
 
 ## 1. Record Work
 
