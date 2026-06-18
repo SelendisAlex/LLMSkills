@@ -10,6 +10,8 @@ license: MIT
 
 - Saving rules: Whenever the user gives important input about this project, such as coding standards, project architecture, file architecture, file or folder naming conventions, variable naming conventions, workflows, or other rules that will have a long-term impact on the project, record them in the directory specified below. Keep the record brief while preserving its core meaning.
 - Saving work records: After each change or update is completed, record the operation process and key points in a text document in a brief and compressed form, like a checkpoint. Also report in the response: "Checkpoint recorded."
+- Saving rules: Use Chinese to record work rules.
+- Saving work records: Use Chinese to record work records.
 
 File saving rules:
 
