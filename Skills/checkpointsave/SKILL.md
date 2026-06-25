@@ -1,6 +1,6 @@
 ---
 name: checkpointsave
-description: Use at the start and end of coding, review, refactor, architecture, debugging, project-rule, or other important workspace tasks in any workspace. At task start, read existing ./workCheckpoint/Rules/ and ./workCheckpoint/Works/ records when this is the first important task in the workspace/session or when prior workspace memory is unavailable. At task end, save concise rule or work checkpoints under ./workCheckpoint/ when project rules, long-term constraints, notable reasoning, code changes, architecture changes, or maintenance notes need to be preserved.
+description: Use at the start and end of coding, review, refactor, architecture, debugging, project-rule, or other important workspace tasks in any workspace. At task start, read existing ./workCheckpoint/Rules/ and ./workCheckpoint/Works/ records when this is the first important task in the workspace/session or when prior workspace memory is unavailable. At task end, save concise rule or work checkpoints under ./workCheckpoint/, including the work-ending prompt when relevant, when project rules, long-term constraints, notable reasoning, code changes, architecture changes, or maintenance notes need to be preserved.
 license: MIT
 ---
 
@@ -58,3 +58,4 @@ When triggered automatically, save the checkpoint before the final response and 
 
 - For coding tasks, before the final response, check how many files were modified in this task and whether any modules or persistent formats were added.
 - If there is a change, create the checkpoint directly without asking.
+- When saving a task-end checkpoint, include the work-ending prompt when it is relevant to future continuation or handoff.
