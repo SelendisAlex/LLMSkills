@@ -10,6 +10,8 @@ license: MIT
 
 Before answering or editing for any coding, review, architecture, debugging, project-rule, or other important workspace task:
 
+Read or modify files using UTF-8 encoding.
+
 1. If this is the first code task, review, or other important task in the current workspace/session, or workspace work memory is unavailable, read this skill first.
 2. Read all existing Markdown files under `./workArchitecture/` if the directory exists.
 3. Treat those architecture records as active workspace context before continuing.
@@ -19,6 +21,7 @@ Before answering or editing for any coding, review, architecture, debugging, pro
 
 - Use this skill to gather project context and save durable architecture documentation for future development work.
 - Keep the generated document focused on project structure, framework choices, development workflow, important files, and maintenance notes.
+- Record architecture documentation in Chinese.
 - Save the document in a separate folder under the current working directory unless the user specifies another location.
 
 ## 2. When the User Provides Project Information and Explicitly Mentions "Organize the Work Architecture"

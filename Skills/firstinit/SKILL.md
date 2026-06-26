@@ -8,7 +8,7 @@ license: MIT
 
 ## 1. Workspace Skill Encoding
 
-- In this workspace, always read and write skills using UTF-8 encoding.
+- always read and write skills using UTF-8 encoding.
 
 ## 2. Workspace Skill Language
 

@@ -10,6 +10,8 @@ license: MIT
 
 Before answering or editing for any coding, review, refactor, architecture, debugging, project-rule, or other important workspace task:
 
+Read or modify files using UTF-8 encoding.
+
 1. If this is the first important task in the current workspace/session, or workspace memory is unavailable, read this skill first.
 2. Read all existing Markdown files under `./workCheckpoint/Rules/` if the directory exists.
 3. Read all existing Markdown files under `./workCheckpoint/Works/` if the directory exists.
