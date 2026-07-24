@@ -1,6 +1,6 @@
 ---
 name: checkpointsave
-description: Use at the start and end of coding, review, refactor, architecture, debugging, project-rule, or other important workspace tasks in any workspace. At task start, read existing ./workCheckpoint/Rules/ and ./workCheckpoint/Works/ records when this is the first important task in the workspace/session or when prior workspace memory is unavailable. At task end, save concise rule or work checkpoints under ./workCheckpoint/, including the current objective's construction strategy, completed objectives, next objectives, and the work-ending prompt when relevant, when project rules, long-term constraints, notable reasoning, code changes, architecture changes, or maintenance notes need to be preserved.
+description: Use at the start and end of coding, review, refactor, architecture, debugging, project-rule, or other important workspace tasks in any workspace. At task start, read existing ./workCheckpoint/Rules/ and ./workCheckpoint/Works/ records when this is the first important task in the workspace/session or when prior workspace memory is unavailable. At the end of a substantial or overall body of work, or a meaningful work stage, save a consolidated, concise rule or work checkpoint under ./workCheckpoint/, including the current objective's construction strategy, completed objectives, next objectives, and the work-ending prompt when relevant. Avoid checkpointing every minor change so the workspace does not accumulate many low-content files.
 license: MIT
 ---
 
@@ -21,7 +21,7 @@ Read or modify files using UTF-8 encoding.
 ## 1. Record Work
 
 - Saving rules: Whenever the user gives important input about this project, such as coding standards, project architecture, file architecture, file or folder naming conventions, variable naming conventions, workflows, or other rules that will have a long-term impact on the project, record them in the directory specified below. Keep the record brief while preserving its core meaning.
-- Saving work records: After each change or update is completed, record the operation process and key points in a text document in a brief and compressed form, like a checkpoint. Also preserve the current objective's construction strategy, completed objectives, and next objectives when they help future interruption and continuation. Report in the response: "Checkpoint recorded."
+- Saving work records: Record the operation process and key points only after a substantial or overall body of work, or a meaningful work stage, is complete. Consolidate related changes into one brief checkpoint instead of creating a separate low-content file after every minor change or update. Also preserve the current objective's construction strategy, completed objectives, and next objectives when they help future interruption and continuation. Report in the response: "Checkpoint recorded."
 - Saving rules: Use Chinese to record work rules.
 - Saving work records: Use Chinese to record work records.
 
@@ -40,7 +40,7 @@ If you do not have any memory about work in this workspace, or if this conversat
 
 ## 3. Automatic Trigger at Task End
 
-At the end of a task, automatically use this skill if any of the following conditions are met:
+At the end of a substantial or overall task, or a meaningful work stage, automatically use this skill if any of the following conditions are met:
 
 - New source code files or modules were created.
 - Three or more project files were modified.
@@ -59,6 +59,6 @@ Do not use this skill automatically in the following cases:
 When triggered automatically, save the checkpoint before the final response and briefly state the checkpoint path in the final response.
 
 - For coding tasks, before the final response, check how many files were modified in this task and whether any modules or persistent formats were added.
-- If there is a change, create the checkpoint directly without asking.
+- If the completed work is substantial or represents a meaningful stage and meets a trigger above, create the checkpoint directly without asking.
 - When saving a task-end checkpoint, include the work-ending prompt when it is relevant to future continuation or handoff.
 - When saving a task-end checkpoint, include the current objective's construction strategy, completed objectives, and next objectives when they help future interruption, continuation, or handoff.
