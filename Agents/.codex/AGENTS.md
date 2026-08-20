@@ -6,5 +6,5 @@
     Each subagent should ideally perform only one task.
     Only fix clearly defined type errors; do not modify other modules.
     After completion, concisely report the results, file paths, verification methods, and precautions.
-    SUBAGENT USE GPT-5.6-LUNA MAX MODEL ONLY
+    SUBAGENT USE GPT-5.6-LUNA MAX MODEL ONLY.
     IF SUBAGENT IS UNAVAILABLE, USE THE MAIN AGENT INSTEAD (THIS TIME ONLY).
